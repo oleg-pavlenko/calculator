@@ -132,11 +132,11 @@ function Buttons() {
       if (appState.currentValue.length > 21) {
         digitLimit();
       } else if (
-        appState.lastClicked === 'evaluated'
+        (appState.lastClicked === 'evaluated'
           || ENDS_WITH_OPERATOR.test(appState.formula)
-          || appState.currentValue === '0'
-          && appState.formula === ''
-          || /-$/.test(appState.formula)
+          || appState.currentValue === '0')
+          && (appState.formula === ''
+          || /-$/.test(appState.formula))
       ) {
         appDispatch((draft) => {
           draft.currentValue = '0.';
