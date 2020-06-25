@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project on Netlify:
+[Calculator](https://youthful-villani-b8c8c0.netlify.app)
+
 ## Available Scripts
 
 In the project directory, you can run:
